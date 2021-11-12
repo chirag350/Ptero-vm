@@ -70,8 +70,8 @@ else
     rm -rf root.tar.gz
     clear
     touch installed
-    ./dist/proot -S . /bin/bash -c "curl -o bin/systemctl https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py"
-    ./dist/proot -S . /bin/bash -c "chmod +x bin/systemctl"
+    ./dist/proot -S . /bin/bash -c "curl -o /bin/systemctl https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py"
+    ./dist/proot -S . /bin/bash -c "chmod +x /bin/systemctl"
     echo "Started PteroVM"
     function runcmd1 {
         echo "${lightgreen}VM@PteroVM${nc}:${lightblue}~${nc}$"
